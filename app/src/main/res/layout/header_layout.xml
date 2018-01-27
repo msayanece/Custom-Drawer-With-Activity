@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Custom Action Bar"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/base_activity_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:translationZ="2dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Profile"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/holo_green_light" />
+
+                <LinearLayout
+                    android:id="@+id/base_activity_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:translationZ="2dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="My Orders"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/holo_green_light" />
+
+                <LinearLayout
+                    android:id="@+id/base_activity_refer_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:translationZ="2dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Refer Friends"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/holo_green_light" />
+
+                <LinearLayout
+                    android:id="@+id/base_activity_attendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:translationZ="2dp"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="5"
+                        android:text="Free Offers"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/holo_green_light" />
+
+                <LinearLayout
+                    android:id="@+id/base_activity_quotation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:translationZ="2dp"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:id="@+id/base_activity_our_team"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="5"
+                        android:text="Eat Out"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/holo_green_light" />
+
+                <LinearLayout
+                    android:id="@+id/base_activity_ta_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:translationZ="2dp"
+                    android:weightSum="6">
+
+                    <TextView
+                        android:id="@+id/base_activity_our_client"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="5"
+                        android:text="Logout"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/holo_green_light" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

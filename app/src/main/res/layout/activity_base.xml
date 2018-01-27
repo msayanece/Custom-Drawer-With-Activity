@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Navigation Header-->
+            <RelativeLayout
+                android:id="@+id/actionbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:elevation="4dp">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/my_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    app:popupTheme="@style/AppTheme">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="11.3">
+
+                        <TextView
+                            android:id="@+id/action_bar_Title"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="9.25"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text="Base Activity"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:id="@+id/frame_notification"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.8"
+                            android:background="?selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:elevation="2dp"
+                            android:orientation="vertical"
+                            android:padding="1dp"
+                            android:translationZ="0dp">
+
+                            <ImageView
+                                android:id="@+id/action_bar_notification_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                app:srcCompat="@drawable/ic_notifications_black" />
+
+                        </FrameLayout>
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.25" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.Toolbar>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="#180101" >
+
+            <!-- uncomment the below code for using expandable list view in drawer
+                Then, do not use header_layout -->
+
+           <!-- <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="DESI DEALS"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ExpandableListView
+                android:id="@+id/expandable_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:background="@android:color/white"
+                android:childDivider="@android:color/holo_green_light"
+                android:divider="@android:color/holo_green_light"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@null"
+                android:listSelector="@android:color/holo_green_light" /> -->
+
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
